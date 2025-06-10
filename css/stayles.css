@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Share Tech Mono', monospace;
   background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
@@ -57,12 +59,35 @@ nav ul li a:hover {
   color: #58a6ff;
 }
 
- .section {
+
+.icons-only .icon-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px;
+}
+
+.icons-only .icon-list i {
+    font-size: 40px;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons-only .icon-list i:hover {
+    transform: scale(1.2);
+    color: #2978a5;
+}
+
+
+
+ .section{
   padding: 60px 0;
 }
 
 .bio h2,
-.section h2 {
+.section h2,
+.icons-only h2 {
   font-size: 2rem;
   color: #00ffff;
   margin-bottom: 20px;
